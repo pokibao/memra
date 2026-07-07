@@ -1,0 +1,10 @@
+{"kind":"sql","statements":["DROP TRIGGER IF EXISTS fail_constitution_insert; CREATE TRIGGER fail_constitution_insert BEFORE INSERT ON constitution_changes WHEN NEW.proposed_content LIKE '%ROLLBACK-GOV%' BEGIN SELECT RAISE(ABORT, 'forced governance rollback'); END;"],"step_id":"S13-01","target":"governance"}
+{"args":{"change_type":"create","proposed_content":"ROLLBACK-GOV proposal","reason":"forced rollback"},"expects":{"jsonl_delta":0,"rollback_clean":true},"kind":"tool","step_id":"S13-02","tool":"propose_change"}
+{"args":{"include_constitution":true,"limit":5,"query":"ROLLBACK-GOV"},"kind":"tool","step_id":"S13-03","tool":"search_rules"}
+{"kind":"sql","statements":["DROP TRIGGER IF EXISTS fail_constitution_insert;"],"step_id":"S13-04","target":"governance"}
+{"args":{"change_type":"create","proposed_content":"ROLLBACK-GOV proposal","reason":"recovered path"},"kind":"tool","step_id":"S13-05","tool":"propose_change"}
+{"args":{"approver":"alice","change_id":"step:S13-05:constitution_changes:0"},"kind":"tool","step_id":"S13-06","tool":"approve_change"}
+{"args":{"approver":"bob","change_id":"step:S13-05:constitution_changes:0"},"kind":"tool","step_id":"S13-07","tool":"approve_change"}
+{"args":{"approver":"carol","change_id":"step:S13-05:constitution_changes:0"},"kind":"tool","step_id":"S13-08","tool":"approve_change"}
+{"args":{"include_constitution":true,"limit":5,"query":"ROLLBACK-GOV"},"kind":"tool","step_id":"S13-09","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S13-10","tool":"get_context"}

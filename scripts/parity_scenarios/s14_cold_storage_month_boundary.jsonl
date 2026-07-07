@@ -1,0 +1,10 @@
+{"args":{"category":"event","confidence":1.0,"content":"month boundary alpha"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S14-01","tool":"add_rule"}
+{"args":{"limit":5,"query":"month boundary alpha"},"kind":"tool","step_id":"S14-02","tool":"search_rules"}
+{"args":{"category":"event","confidence":1.0,"content":"month boundary beta"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S14-03","tool":"add_rule"}
+{"args":{"limit":5,"query":"month boundary beta"},"kind":"tool","step_id":"S14-04","tool":"search_rules"}
+{"args":{"category":"event","confidence":1.0,"content":"month boundary gamma"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S14-05","tool":"add_rule"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S14-06","tool":"get_context"}
+{"args":{"limit":10,"query":"month boundary"},"kind":"tool","step_id":"S14-07","tool":"search_rules"}
+{"args":{"category":"event","confidence":1.0,"content":"month boundary delta"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S14-08","tool":"add_rule"}
+{"args":{"limit":5,"query":"month boundary delta"},"kind":"tool","step_id":"S14-09","tool":"search_rules"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S14-10","tool":"get_context"}

@@ -1,0 +1,10 @@
+{"args":{"category":"architecture","confidence":1.0,"content":"Auto link cluster root cache invalidation architecture"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S17-01","tool":"add_rule"}
+{"args":{"category":"architecture","confidence":1.0,"content":"Auto link cluster sibling cache invalidation architecture details"},"expects":{"auto_links":["step:S17-01:notes:0"],"jsonl_delta":1},"kind":"tool","step_id":"S17-02","tool":"add_rule"}
+{"args":{"category":"architecture","confidence":1.0,"content":"Auto link cluster cousin cache invalidation design notes"},"expects":{"auto_links":["step:S17-01:notes:0","step:S17-02:notes:0"],"jsonl_delta":1},"kind":"tool","step_id":"S17-03","tool":"add_rule"}
+{"args":{"limit":10,"query":"Auto link cluster"},"kind":"tool","step_id":"S17-04","tool":"search_rules"}
+{"args":{"category":"architecture","confidence":1.0,"content":"Auto link cluster leaf cache invalidation rollout"},"expects":{"auto_links":["step:S17-02:notes:0","step:S17-03:notes:0"],"jsonl_delta":1},"kind":"tool","step_id":"S17-05","tool":"add_rule"}
+{"args":{"limit":5,"query":"rollout"},"kind":"tool","step_id":"S17-06","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S17-07","tool":"get_context"}
+{"args":{"limit":10,"query":"cache invalidation"},"kind":"tool","step_id":"S17-08","tool":"search_rules"}
+{"args":{"category":"architecture","confidence":1.0,"content":"Auto link cluster extra cache invalidation reminder"},"expects":{"auto_links":["step:S17-03:notes:0","step:S17-05:notes:0"],"jsonl_delta":1},"kind":"tool","step_id":"S17-09","tool":"add_rule"}
+{"args":{"limit":5,"query":"Auto link cluster extra"},"kind":"tool","step_id":"S17-10","tool":"search_rules"}

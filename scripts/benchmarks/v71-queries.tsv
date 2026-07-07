@@ -1,0 +1,21 @@
+# query	expected_focus
+memory anchor	Memra project purpose, Rust rewrite, local memory system.
+DemoERP ERP	DemoERPERP project facts, dealer/finance/demo context.
+AcmeOps ERP	AcmeOpsERP project facts and workflow/editor context.
+MarketLab 投研	MarketLab investment research system facts and eval/report pipeline.
+mission control	Mission Control facts including Hermes rollout and promotion gates.
+D-008 Rust 单栈	Memra D-008 Rust single-stack decision.
+R4 closeout v7.0.0	R4 closeout, v7.0.0 Rust-only sunset, archived Python.
+R1 soak defer	R1 soak pause/defer decision and lab-host evidence.
+V1 V2 RBAC	V1/V2 RBAC or ERP permission-review facts.
+contract first 七件	Contract-first seven-piece project contract from rules.
+alice 北极星	Alice north-star memory principle for MA.
+alice 偷懒纠错	Alice correction about not being lazy or skipping evidence.
+CORRECTION 自我打脸	Correction/self-caught contradiction facts.
+fastembed bge-m3	MA technical stack: fastembed bge-m3 embedding.
+SQLite FTS5	MA technical stack: SQLite and FTS5 retrieval/storage.
+MCP stdio 工具	Memra MCP stdio tool/runtime facts.
+Hermes plugin adapter	Hermes Claude plugin adapter exception/decision facts.
+AKM keychain	AKM/keychain operational facts.
+launchd r1-soak	launchd r1-soak status/evidence facts.
+OpenHuman 借鉴	OpenHuman borrowed ideas merged into the v7.1+ plan.

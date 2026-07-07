@@ -1,0 +1,10 @@
+{"args":{"summary":"alpha blocked","task_id":"task-alpha","task_status":"blocked"},"kind":"tool","step_id":"S07-01","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_id":"task-alpha","task_status":"active"},"kind":"tool","step_id":"S07-02","tool":"search_checkpoints"}
+{"args":{"summary":"alpha in progress","task_id":"task-alpha","task_status":"in_progress"},"kind":"tool","step_id":"S07-03","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_id":"task-alpha","task_status":"active"},"kind":"tool","step_id":"S07-04","tool":"search_checkpoints"}
+{"args":{"summary":"alpha done","task_id":"task-alpha","task_status":"completed"},"kind":"tool","step_id":"S07-05","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_id":"task-alpha","task_status":"completed"},"kind":"tool","step_id":"S07-06","tool":"search_checkpoints"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S07-07","tool":"get_context"}
+{"args":{"summary":"beta blocked","task_id":"task-beta","task_status":"blocked"},"kind":"tool","step_id":"S07-08","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_status":"active"},"kind":"tool","step_id":"S07-09","tool":"search_checkpoints"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S07-10","tool":"get_context"}

@@ -1,0 +1,16 @@
+[package]
+name = "memra-embed-worker"
+description = "Memra embedding subprocess — isolates ONNX FFI from main server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+fastembed = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }

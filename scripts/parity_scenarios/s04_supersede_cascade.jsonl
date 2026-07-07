@@ -1,0 +1,10 @@
+{"args":{"category":"decision","confidence":1.0,"content":"Project Apollo roadmap v1 milestone is June."},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S04-01","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Project Apollo roadmap v2 milestone moved to July."},"expects":{"jsonl_delta":1,"supersede_predecessor":"step:S04-01:notes:0"},"kind":"tool","step_id":"S04-02","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Project Apollo roadmap v3 milestone moved to August."},"expects":{"jsonl_delta":1,"supersede_predecessor":"step:S04-02:notes:0"},"kind":"tool","step_id":"S04-03","tool":"add_rule"}
+{"args":{"limit":5,"query":"Project Apollo roadmap"},"kind":"tool","step_id":"S04-04","tool":"search_rules"}
+{"args":{"category":"decision","confidence":1.0,"content":"Project Apollo roadmap v4 milestone moved to September."},"expects":{"jsonl_delta":1,"supersede_predecessor":"step:S04-03:notes:0"},"kind":"tool","step_id":"S04-05","tool":"add_rule"}
+{"args":{"limit":5,"query":"Apollo September"},"kind":"tool","step_id":"S04-06","tool":"search_rules"}
+{"args":{"category":"decision","confidence":1.0,"content":"Project Apollo roadmap final milestone moved to October."},"expects":{"jsonl_delta":1,"supersede_predecessor":"step:S04-05:notes:0"},"kind":"tool","step_id":"S04-07","tool":"add_rule"}
+{"args":{"limit":5,"query":"Apollo roadmap final"},"kind":"tool","step_id":"S04-08","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S04-09","tool":"get_context"}
+{"args":{"limit":10,"query":"Project Apollo milestone"},"kind":"tool","step_id":"S04-10","tool":"search_rules"}

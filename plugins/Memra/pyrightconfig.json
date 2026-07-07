@@ -1,0 +1,6 @@
+{
+  "extraPaths": ["."],
+  "include": ["**/*.py"],
+  "reportMissingImports": "warning",
+  "reportMissingModuleSource": "none"
+}

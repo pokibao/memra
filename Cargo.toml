@@ -1,0 +1,65 @@
+[workspace]
+members = ["memra-core", "memra-server", "memra-embed-worker"]
+resolver = "2"
+
+[workspace.package]
+version = "7.0.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/pokibao/memra"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# SQLite
+rusqlite = { version = "0.38", features = ["bundled", "backup"] }
+deadpool-sqlite = "0.13"
+
+# Embeddings
+fastembed = "5.13"
+
+# MCP protocol
+rmcp = { version = "1.4", features = ["server", "transport-io", "transport-streamable-http-server"] }
+
+# HTTP (Phase 3, declared now for workspace coherence)
+axum = "0.8"
+tower = "0.5"
+tower-http = { version = "0.6", features = ["cors", "trace"] }
+tower_governor = "0.8"
+moka = { version = "0.12", features = ["future"] }
+clap = { version = "4", features = ["derive"] }
+blake3 = "1"
+getrandom = "0.3"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
+futures-util = "0.3"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+
+# Time & IDs
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+# Observability
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Schema generation (used by rmcp tool macros)
+schemars = "1"
+
+# Error handling
+thiserror = "2"
+anyhow = "1"
+
+# Unicode
+unicode-normalization = "0.1"
+
+# Regex (MemoryPolicy classifier)
+regex = "1"
+
+# Test infrastructure
+wiremock = "0.6"

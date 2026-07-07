@@ -1,0 +1,10 @@
+{"args":{"category":"bug","confidence":1.0,"content":"rollback baseline good"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S12-01","tool":"add_rule"}
+{"kind":"sql","statements":["DROP TRIGGER IF EXISTS fail_notes_insert; CREATE TRIGGER fail_notes_insert BEFORE INSERT ON notes WHEN NEW.content LIKE '%ROLLBACK-TRIGGER%' BEGIN SELECT RAISE(ABORT, 'forced rollback'); END;"],"step_id":"S12-02","target":"main"}
+{"args":{"category":"bug","confidence":1.0,"content":"ROLLBACK-TRIGGER write should fail"},"expects":{"jsonl_delta":0,"rollback_clean":true},"kind":"tool","step_id":"S12-03","tool":"add_rule"}
+{"args":{"limit":5,"query":"ROLLBACK-TRIGGER"},"kind":"tool","step_id":"S12-04","tool":"search_rules"}
+{"kind":"sql","statements":["DROP TRIGGER IF EXISTS fail_notes_insert;"],"step_id":"S12-05","target":"main"}
+{"args":{"category":"bug","confidence":1.0,"content":"ROLLBACK-TRIGGER write succeeds after drop"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S12-06","tool":"add_rule"}
+{"args":{"limit":10,"query":"ROLLBACK-TRIGGER"},"kind":"tool","step_id":"S12-07","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S12-08","tool":"get_context"}
+{"args":{"category":"bug","confidence":1.0,"content":"rollback cleanup marker"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S12-09","tool":"add_rule"}
+{"args":{"limit":10,"query":"rollback"},"kind":"tool","step_id":"S12-10","tool":"search_rules"}

@@ -1,0 +1,1 @@
+mod fastembed_cosine;

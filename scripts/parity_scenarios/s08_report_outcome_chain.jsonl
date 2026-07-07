@@ -1,0 +1,10 @@
+{"args":{"memory_id":"seed:outcome_target","outcome":"confirmed"},"kind":"tool","step_id":"S08-01","tool":"report_outcome"}
+{"args":{"memory_id":"seed:outcome_target","outcome":"corrected","reason":"postcondition corrected"},"kind":"tool","step_id":"S08-02","tool":"report_outcome"}
+{"args":{"memory_id":"seed:outcome_target","outcome":"outdated","reason":"postcondition outdated"},"kind":"tool","step_id":"S08-03","tool":"report_outcome"}
+{"args":{"limit":5,"query":"Outcome target"},"kind":"tool","step_id":"S08-04","tool":"search_rules"}
+{"args":{"category":"research","confidence":1.0,"content":"Outcome follower memory"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S08-05","tool":"add_rule"}
+{"args":{"memory_id":"step:S08-05:notes:0","outcome":"confirmed"},"kind":"tool","step_id":"S08-06","tool":"report_outcome"}
+{"args":{"limit":5,"query":"Outcome follower"},"kind":"tool","step_id":"S08-07","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S08-08","tool":"get_context"}
+{"args":{"memory_id":"step:S08-05:notes:0","outcome":"outdated","reason":"cleanup"},"kind":"tool","step_id":"S08-09","tool":"report_outcome"}
+{"args":{"limit":10,"query":"Outcome"},"kind":"tool","step_id":"S08-10","tool":"search_rules"}

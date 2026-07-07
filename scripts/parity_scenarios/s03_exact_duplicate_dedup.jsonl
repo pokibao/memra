@@ -1,0 +1,10 @@
+{"args":{"category":"bug","confidence":1.0,"content":"Duplicate alpha base note"},"expects":{"jsonl_delta":1},"kind":"tool","repeat_key":"alpha","step_id":"S03-01","tool":"add_rule"}
+{"args":{"category":"bug","confidence":1.0,"content":"Duplicate alpha base note"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"alpha","step_id":"S03-02","tool":"add_rule"}
+{"args":{"category":"bug","confidence":1.0,"content":"Duplicate alpha base note"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"alpha","step_id":"S03-03","tool":"add_rule"}
+{"args":{"limit":5,"query":"Duplicate alpha"},"kind":"tool","step_id":"S03-04","tool":"search_rules"}
+{"args":{"category":"decision","confidence":1.0,"content":"Unique beta release checklist note"},"expects":{"jsonl_delta":1},"kind":"tool","repeat_key":"beta","step_id":"S03-05","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Unique beta release checklist note"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"beta","step_id":"S03-06","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Unique beta release checklist note"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"beta","step_id":"S03-07","tool":"add_rule"}
+{"args":{"limit":5,"query":"Duplicate beta"},"kind":"tool","step_id":"S03-08","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S03-09","tool":"get_context"}
+{"args":{"limit":10,"query":"Duplicate"},"kind":"tool","step_id":"S03-10","tool":"search_rules"}

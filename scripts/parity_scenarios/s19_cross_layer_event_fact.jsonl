@@ -1,0 +1,10 @@
+{"args":{"category":"event","confidence":1.0,"content":"Cross layer budget is 30k","when":"2026-04-15T00:00:00Z"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S19-01","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Cross layer budget is 20k"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S19-02","tool":"add_rule"}
+{"args":{"limit":10,"query":"Cross layer budget"},"kind":"tool","step_id":"S19-03","tool":"search_rules"}
+{"args":{"category":"event","confidence":1.0,"content":"Cross layer team has 3 people","when":"2026-04-15T01:00:00Z"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S19-04","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Cross layer team disbanded"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S19-05","tool":"add_rule"}
+{"args":{"limit":10,"query":"Cross layer team"},"kind":"tool","step_id":"S19-06","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S19-07","tool":"get_context"}
+{"args":{"limit":5,"query":"budget 20k"},"kind":"tool","step_id":"S19-08","tool":"search_rules"}
+{"args":{"limit":5,"query":"team disbanded"},"kind":"tool","step_id":"S19-09","tool":"search_rules"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S19-10","tool":"get_context"}

@@ -1,0 +1,22 @@
+{
+  "name": "memra",
+  "version": "7.0.0",
+  "description": "Memra provides persistent AI memory infrastructure for Claude Code. SQLite + FTS5 hybrid search, FastEmbed embeddings, and a three-layer memory model for identity, events, and verified facts.",
+  "author": {
+    "name": "Memra contributors"
+  },
+  "homepage": "https://github.com/pokibao/memra",
+  "repository": "https://github.com/pokibao/memra",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "mcp",
+    "sqlite",
+    "fts5",
+    "fastembed",
+    "ollama",
+    "rust",
+    "ai-memory",
+    "claude-code"
+  ]
+}

@@ -1,0 +1,10 @@
+{"args":{"category":"bug","confidence":1.0,"content":"Idempotency synthetic alpha"},"expects":{"jsonl_delta":1},"kind":"tool","repeat_key":"alpha","step_id":"S09-01","tool":"add_rule"}
+{"args":{"category":"bug","confidence":1.0,"content":"Idempotency synthetic alpha"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"alpha","step_id":"S09-02","tool":"add_rule"}
+{"args":{"category":"bug","confidence":1.0,"content":"Idempotency synthetic alpha"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"alpha","step_id":"S09-03","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Idempotency synthetic beta"},"expects":{"jsonl_delta":1},"kind":"tool","repeat_key":"beta","step_id":"S09-04","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Idempotency synthetic beta"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"beta","step_id":"S09-05","tool":"add_rule"}
+{"args":{"category":"decision","confidence":1.0,"content":"Idempotency synthetic beta"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"beta","step_id":"S09-06","tool":"add_rule"}
+{"args":{"limit":10,"query":"Idempotency synthetic"},"kind":"tool","step_id":"S09-07","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S09-08","tool":"get_context"}
+{"args":{"limit":5,"query":"synthetic beta"},"kind":"tool","step_id":"S09-09","tool":"search_rules"}
+{"args":{"limit":5,"query":"synthetic alpha"},"kind":"tool","step_id":"S09-10","tool":"search_rules"}

@@ -1,0 +1,9 @@
+target/
+.venv/
+.qdrant_test_api_*
+.fastembed_cache/
+*.bak
+.DS_Store
+.env
+.env.local
+.ai/

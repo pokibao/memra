@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "purpose": "Pin the L0 approver canonicalization algorithm so Python (backend/services/constitution.py::_canonical_approver_key) and Rust (memra-core/src/governance/mod.rs::canonicalize_approver) cannot silently diverge. A divergence here is a real bypass: an attacker registering as 'alice' on one backend and 'Alice' on the other could pass the 3-approval gate twice. Both backends MUST agree byte-for-byte on every entry in `shared_cases`. The `known_divergences` block lists the two inputs where Rust `to_lowercase()` and Python `casefold()` legitimately differ (German ß, Greek final sigma); both backends MUST match their own expected value AND the two values MUST stay distinct. If a future change accidentally collapses a known_divergence into agreement, that's progress and the case should move to shared_cases.",
+  "shared_cases": [
+    { "id": "plain_lower",                       "input": "alice",            "canonical": "alice" },
+    { "id": "plain_upper_to_lower",              "input": "ALICE",            "canonical": "alice" },
+    { "id": "plain_mixed_case",                  "input": "Alice",            "canonical": "alice" },
+    { "id": "ascii_whitespace_strip",            "input": "  alice  ",        "canonical": "alice" },
+    { "id": "tab_strip",                         "input": "\talice\t",        "canonical": "alice" },
+    { "id": "newline_strip",                     "input": "\nalice\n",        "canonical": "alice" },
+    { "id": "ideographic_space_strip",           "input": "\u3000alice\u3000","canonical": "alice" },
+    { "id": "zwsp_leading",                      "input": "\u200balice",       "canonical": "alice" },
+    { "id": "zwsp_middle",                       "input": "al\u200bice",       "canonical": "alice" },
+    { "id": "zwsp_trailing",                     "input": "alice\u200b",       "canonical": "alice" },
+    { "id": "zwnj",                              "input": "al\u200cice",       "canonical": "alice" },
+    { "id": "zwj",                               "input": "al\u200dice",       "canonical": "alice" },
+    { "id": "bom_leading",                       "input": "\ufeffalice",       "canonical": "alice" },
+    { "id": "word_joiner",                       "input": "al\u2060ice",       "canonical": "alice" },
+    { "id": "soft_hyphen_middle",                "input": "al\u00adice",       "canonical": "alice" },
+    { "id": "mongolian_vowel_separator",         "input": "al\u180eice",       "canonical": "alice" },
+    { "id": "combining_grapheme_joiner",         "input": "al\u034fice",       "canonical": "alice" },
+    { "id": "bidi_rlo_leading",                  "input": "\u202ealice",       "canonical": "alice" },
+    { "id": "bidi_rlo_middle",                   "input": "ali\u202ece",       "canonical": "alice" },
+    { "id": "bidi_isolate_pair",                 "input": "\u2066alice\u2069", "canonical": "alice" },
+    { "id": "variation_selector",                "input": "alice\ufe0f",       "canonical": "alice" },
+    { "id": "variation_selector_supplement",     "input": "alice\udb40\udd00", "canonical": "alice", "_note": "U+E0100 in surrogate pair JSON encoding" },
+    { "id": "tag_char",                          "input": "alice\udb40\udc61", "canonical": "alice", "_note": "U+E0061 in surrogate pair JSON encoding" },
+    { "id": "fullwidth_alice",                   "input": "Ａｌｉｃｅ",         "canonical": "alice" },
+    { "id": "fullwidth_lower",                   "input": "ａｌｉｃｅ",         "canonical": "alice" },
+    { "id": "precomposed_accent",                "input": "\u00c1lice",        "canonical": "\u00e1lice" },
+    { "id": "decomposed_accent",                 "input": "A\u0301lice",       "canonical": "\u00e1lice" },
+    { "id": "combined_invisible_and_case",       "input": "\u200bAl\u202eICE\u00ad", "canonical": "alice" },
+    { "id": "turkish_capital_i_with_dot",        "input": "ALİCE",            "canonical": "ali\u0307ce", "_note": "Both Python casefold and Rust to_lowercase produce 'i + combining dot above' for U+0130 — confirmed by direct probe 2026-04-19" },
+    { "id": "cyrillic_homoglyph_distinct",       "input": "\u0410lice",        "canonical": "\u0430lice", "_note": "Out-of-scope for canonical dedup (mixed-script homoglyphs need actor_id); both backends fold the case but keep the Cyrillic codepoint distinct from Latin" }
+  ],
+  "known_divergences": [
+    {
+      "id": "german_eszett_lower",
+      "input": "Stra\u00dfe",
+      "python_canonical": "strasse",
+      "rust_canonical": "stra\u00dfe",
+      "rationale": "Python casefold() expands ß → ss per Unicode case folding. Rust str::to_lowercase() does Unicode lowercase, which keeps ß. Closing this requires the `caseless` crate or hand-rolled folding on the Rust side — explicitly deferred."
+    },
+    {
+      "id": "greek_final_sigma",
+      "input": "\u039f\u0394\u03a5\u03a3\u03a3\u0395\u03a5\u03a3",
+      "python_canonical": "\u03bf\u03b4\u03c5\u03c3\u03c3\u03b5\u03c5\u03c3",
+      "rust_canonical": "\u03bf\u03b4\u03c5\u03c3\u03c3\u03b5\u03c5\u03c2",
+      "rationale": "Rust str::to_lowercase() applies the contextual Greek final-sigma rule (terminal Σ → ς). Python str.casefold() does not — every Σ becomes σ. Same root cause as the ß case (casefold ≠ to_lowercase semantics)."
+    }
+  ]
+}

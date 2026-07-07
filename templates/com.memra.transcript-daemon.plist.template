@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.memra.transcript-daemon</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>{{UV_PATH}}</string>
+        <string>run</string>
+        <string>--directory</string>
+        <string>{{REPO_ROOT}}</string>
+        <string>python</string>
+        <string>{{REPO_ROOT}}/scripts/transcript_daemon.py</string>
+    </array>
+
+    <!-- Trigger every N seconds (default 300 = 5 minutes) -->
+    <key>StartInterval</key>
+    <integer>{{INTERVAL_SEC}}</integer>
+
+    <!-- Crashed=true: restart only on non-zero exit.
+         Daemon exits 0 normally (kill-switch, flock-busy, graceful SIGTERM)
+         so this will NOT busy-loop. ThrottleInterval adds 60s backoff. -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>Crashed</key>
+        <true/>
+    </dict>
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+
+    <!-- Do NOT run at load time; wait for first StartInterval tick -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>{{HOME}}/.memra/logs/daemon-stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>{{HOME}}/.memra/logs/daemon-stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>{{HOME}}</string>
+        <key>PATH</key>
+        <string>{{PATH_DIRS}}</string>
+        <key>MA_PHASE3_DRY_RUN</key>
+        <string>{{DRY_RUN}}</string>
+        <key>MA_PHASE3_DAEMON_DISABLED</key>
+        <string>{{DISABLED}}</string>
+        <key>MA_PHASE3_SCAN_INTERVAL_SEC</key>
+        <string>{{INTERVAL_SEC}}</string>
+        <key>MA_PHASE3_BATCH_SIZE</key>
+        <string>{{BATCH_SIZE}}</string>
+        <key>MA_PHASE3_MAX_CONCURRENT</key>
+        <string>{{MAX_CONCURRENT}}</string>
+        <key>MA_PHASE3_COST_CAP_USD</key>
+        <string>{{COST_CAP_USD}}</string>
+        <key>MA_PHASE3_TELEGRAM_ALERT_TOKEN</key>
+        <string>{{TG_TOKEN}}</string>
+        <key>MA_PHASE3_TELEGRAM_ALERT_CHAT_ID</key>
+        <string>{{TG_CHAT_ID}}</string>
+        <key>PYTHONUNBUFFERED</key>
+        <string>1</string>
+    </dict>
+</dict>
+</plist>

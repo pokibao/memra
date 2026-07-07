@@ -1,0 +1,10 @@
+{"args":{"category":"bug","confidence":1.0,"content":"Final stress alpha"},"expects":{"jsonl_delta":1},"kind":"tool","repeat_key":"final-alpha","step_id":"S20-01","tool":"add_rule"}
+{"expects":{"jsonl_delta":8},"kind":"parallel_add_rule","payloads":[{"category":"event","confidence":1.0,"content":"final burst #0","when":"2026-04-15T00:03:00Z"},{"category":"event","confidence":1.0,"content":"final burst #1","when":"2026-04-15T00:03:01Z"},{"category":"event","confidence":1.0,"content":"final burst #2","when":"2026-04-15T00:03:02Z"},{"category":"event","confidence":1.0,"content":"final burst #3","when":"2026-04-15T00:03:03Z"},{"category":"event","confidence":1.0,"content":"final burst #4","when":"2026-04-15T00:03:04Z"},{"category":"event","confidence":1.0,"content":"final burst #5","when":"2026-04-15T00:03:05Z"},{"category":"event","confidence":1.0,"content":"final burst #6","when":"2026-04-15T00:03:06Z"},{"category":"event","confidence":1.0,"content":"final burst #7","when":"2026-04-15T00:03:07Z"}],"step_id":"S20-02"}
+{"args":{"limit":5,"query":"Final stress alpha"},"kind":"tool","step_id":"S20-03","tool":"search_rules"}
+{"args":{"summary":"final in progress","task_id":"final-stress","task_status":"in_progress"},"kind":"tool","step_id":"S20-04","tool":"save_checkpoint"}
+{"args":{"category":"bug","confidence":1.0,"content":"Final stress alpha"},"expects":{"duplicate":true,"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"final-alpha","step_id":"S20-05","tool":"add_rule"}
+{"args":{"memory_id":"step:S20-01:notes:0","outcome":"corrected","reason":"final stress correction"},"kind":"tool","step_id":"S20-06","tool":"report_outcome"}
+{"args":{"limit":5,"task_id":"final-stress","task_status":"active"},"kind":"tool","step_id":"S20-07","tool":"search_checkpoints"}
+{"args":{"change_type":"create","proposed_content":"Final stress constitution","reason":"mixed finale"},"kind":"tool","step_id":"S20-08","tool":"propose_change"}
+{"args":{"approver":"alice","change_id":"step:S20-08:constitution_changes:0"},"kind":"tool","step_id":"S20-09","tool":"approve_change"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S20-10","tool":"get_context"}

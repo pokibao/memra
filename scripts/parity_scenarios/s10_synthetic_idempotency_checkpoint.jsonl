@@ -1,0 +1,10 @@
+{"args":{"summary":"replay v1","task_id":"replay-task","task_status":"blocked"},"kind":"tool","repeat_key":"cp-1","step_id":"S10-01","tool":"save_checkpoint"}
+{"args":{"summary":"replay v1","task_id":"replay-task","task_status":"blocked"},"expects":{"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"cp-1","step_id":"S10-02","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_id":"replay-task","task_status":"active"},"kind":"tool","step_id":"S10-03","tool":"search_checkpoints"}
+{"args":{"summary":"replay v2","task_id":"replay-task","task_status":"in_progress"},"kind":"tool","repeat_key":"cp-2","step_id":"S10-04","tool":"save_checkpoint"}
+{"args":{"summary":"replay v2","task_id":"replay-task","task_status":"in_progress"},"expects":{"idempotent":true,"jsonl_delta":0},"kind":"tool","repeat_key":"cp-2","step_id":"S10-05","tool":"save_checkpoint"}
+{"args":{"limit":5,"task_id":"replay-task","task_status":"active"},"kind":"tool","step_id":"S10-06","tool":"search_checkpoints"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S10-07","tool":"get_context"}
+{"args":{"limit":5,"query":"replay-task"},"kind":"tool","step_id":"S10-08","tool":"search_rules"}
+{"args":{"limit":10,"task_status":"active"},"kind":"tool","step_id":"S10-09","tool":"search_checkpoints"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S10-10","tool":"get_context"}

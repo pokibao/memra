@@ -1,0 +1,10 @@
+{"args":{"limit":5,"query":"Rust parity"},"kind":"tool","step_id":"S01-01","tool":"search_rules"}
+{"args":{"limit":5,"query":"Python backend"},"kind":"tool","step_id":"S01-02","tool":"search_rules"}
+{"args":{"limit":5,"query":"cold storage"},"kind":"tool","step_id":"S01-03","tool":"search_rules"}
+{"args":{"limit":5,"query":"merge block"},"kind":"tool","step_id":"S01-04","tool":"search_rules"}
+{"args":{"limit":5,"query":"overview"},"kind":"tool","step_id":"S01-05","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S01-06","tool":"get_context"}
+{"args":{"limit":5,"task_status":"active"},"kind":"tool","step_id":"S01-07","tool":"search_checkpoints"}
+{"args":{"limit":5,"query":"merge-block","task_status":"active"},"kind":"tool","step_id":"S01-08","tool":"search_checkpoints"}
+{"args":{"query":"Gate F parity","selected_limit":5},"kind":"tool","step_id":"S01-09","tool":"search_manifest"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S01-10","tool":"get_context"}

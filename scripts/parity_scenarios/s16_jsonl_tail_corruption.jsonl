@@ -1,0 +1,10 @@
+{"args":{"limit":5,"query":"corrupt tail seed"},"kind":"tool","step_id":"S16-01","tool":"search_rules"}
+{"args":{"category":"bug","confidence":1.0,"content":"corrupt tail recovery alpha"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S16-02","tool":"add_rule"}
+{"args":{"limit":5,"query":"corrupt tail recovery alpha"},"kind":"tool","step_id":"S16-03","tool":"search_rules"}
+{"args":{"category":"bug","confidence":1.0,"content":"corrupt tail recovery beta"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S16-04","tool":"add_rule"}
+{"args":{"limit":5,"query":"corrupt tail recovery beta"},"kind":"tool","step_id":"S16-05","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S16-06","tool":"get_context"}
+{"args":{"category":"bug","confidence":1.0,"content":"corrupt tail recovery gamma"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S16-07","tool":"add_rule"}
+{"args":{"limit":10,"query":"corrupt tail"},"kind":"tool","step_id":"S16-08","tool":"search_rules"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S16-09","tool":"get_context"}
+{"args":{"limit":10,"query":"recovery"},"kind":"tool","step_id":"S16-10","tool":"search_rules"}

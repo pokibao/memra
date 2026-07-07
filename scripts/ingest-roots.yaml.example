@@ -1,0 +1,6 @@
+# Example for ~/.memra/ingest-roots.yaml.
+# `ma ingest` accepts either this shape or a plain YAML array.
+roots:
+  - path: ~/.claude/rules
+  - path: /YOUR/PATH/TO/memra/docs/plans
+  - path: /YOUR/PATH/TO/memra/PROJECT_FACTS.md

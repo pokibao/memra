@@ -1,0 +1,50 @@
+{
+  "description": "Memra lifecycle hooks — auto-flush on compact, restore on resume, surface pending memories on session start, validate writes.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/hooks/ma-hook-rust.sh pending-nudge",
+            "timeout": 3000
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/hooks/ma-hook-rust.sh precompact",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/hooks/ma-hook-rust.sh postcompact",
+            "timeout": 3000
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__memra__add_rule",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/hooks/ma-hook-rust.sh add-rule-validator",
+            "timeout": 3000
+          }
+        ]
+      }
+    ]
+  }
+}

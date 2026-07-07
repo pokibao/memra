@@ -1,0 +1,10 @@
+{"args":{"change_type":"create","proposed_content":"Approval replay lock","reason":"duplicate approver test"},"kind":"tool","step_id":"S06-01","tool":"propose_change"}
+{"args":{"approver":"alice","change_id":"step:S06-01:constitution_changes:0"},"kind":"tool","step_id":"S06-02","tool":"approve_change"}
+{"args":{"approver":"bob","change_id":"step:S06-01:constitution_changes:0"},"kind":"tool","step_id":"S06-03","tool":"approve_change"}
+{"args":{"approver":"alice","change_id":"step:S06-01:constitution_changes:0"},"expects":{"jsonl_delta":0,"rollback_clean":true},"kind":"tool","step_id":"S06-04","tool":"approve_change"}
+{"args":{"include_constitution":true,"limit":5,"query":"Approval replay lock"},"kind":"tool","step_id":"S06-05","tool":"search_rules"}
+{"args":{"approver":"carol","change_id":"step:S06-01:constitution_changes:0"},"kind":"tool","step_id":"S06-06","tool":"approve_change"}
+{"args":{"include_constitution":true,"limit":5,"query":"Approval replay lock"},"kind":"tool","step_id":"S06-07","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S06-08","tool":"get_context"}
+{"args":{"limit":5,"task_status":"active"},"kind":"tool","step_id":"S06-09","tool":"search_checkpoints"}
+{"args":{"query":"Approval replay lock","selected_limit":5},"kind":"tool","step_id":"S06-10","tool":"search_manifest"}

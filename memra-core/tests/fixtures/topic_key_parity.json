@@ -1,0 +1,602 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 001: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 001: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000002",
+    "layer": "preference",
+    "content": "Synthetic fixture 002: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "preference:Synthetic fixture 002: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000003",
+    "layer": "procedure",
+    "content": "Synthetic fixture 003: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "procedure:Synthetic fixture 003: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000004",
+    "layer": "decision",
+    "content": "Synthetic fixture 004: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "decision:Synthetic fixture 004: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000005",
+    "layer": "correction",
+    "content": "Synthetic fixture 005: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "correction:Synthetic fixture 005: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000006",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 006: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 006: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000007",
+    "layer": "preference",
+    "content": "Synthetic fixture 007: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "preference:Synthetic fixture 007: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000008",
+    "layer": "procedure",
+    "content": "Synthetic fixture 008: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "procedure:Synthetic fixture 008: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000009",
+    "layer": "decision",
+    "content": "Synthetic fixture 009: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "decision:Synthetic fixture 009: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000010",
+    "layer": "correction",
+    "content": "Synthetic fixture 010: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "correction:Synthetic fixture 010: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000011",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 011: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 011: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000012",
+    "layer": "preference",
+    "content": "Synthetic fixture 012: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "preference:Synthetic fixture 012: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000013",
+    "layer": "procedure",
+    "content": "Synthetic fixture 013: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "procedure:Synthetic fixture 013: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000014",
+    "layer": "decision",
+    "content": "Synthetic fixture 014: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "decision:Synthetic fixture 014: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000015",
+    "layer": "correction",
+    "content": "Synthetic fixture 015: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "correction:Synthetic fixture 015: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000016",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 016: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 016: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000017",
+    "layer": "preference",
+    "content": "Synthetic fixture 017: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "preference:Synthetic fixture 017: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000018",
+    "layer": "procedure",
+    "content": "Synthetic fixture 018: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "procedure:Synthetic fixture 018: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000019",
+    "layer": "decision",
+    "content": "Synthetic fixture 019: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "decision:Synthetic fixture 019: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000020",
+    "layer": "correction",
+    "content": "Synthetic fixture 020: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "correction:Synthetic fixture 020: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000021",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 021: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 021: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000022",
+    "layer": "preference",
+    "content": "Synthetic fixture 022: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "preference:Synthetic fixture 022: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000023",
+    "layer": "procedure",
+    "content": "Synthetic fixture 023: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "procedure:Synthetic fixture 023: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000024",
+    "layer": "decision",
+    "content": "Synthetic fixture 024: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "decision:Synthetic fixture 024: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000025",
+    "layer": "correction",
+    "content": "Synthetic fixture 025: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "correction:Synthetic fixture 025: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000026",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 026: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 026: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000027",
+    "layer": "preference",
+    "content": "Synthetic fixture 027: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "preference:Synthetic fixture 027: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000028",
+    "layer": "procedure",
+    "content": "Synthetic fixture 028: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "procedure:Synthetic fixture 028: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000029",
+    "layer": "decision",
+    "content": "Synthetic fixture 029: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "decision:Synthetic fixture 029: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000030",
+    "layer": "correction",
+    "content": "Synthetic fixture 030: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "correction:Synthetic fixture 030: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000031",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 031: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 031: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000032",
+    "layer": "preference",
+    "content": "Synthetic fixture 032: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "preference:Synthetic fixture 032: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000033",
+    "layer": "procedure",
+    "content": "Synthetic fixture 033: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "procedure:Synthetic fixture 033: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000034",
+    "layer": "decision",
+    "content": "Synthetic fixture 034: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "decision:Synthetic fixture 034: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000035",
+    "layer": "correction",
+    "content": "Synthetic fixture 035: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "correction:Synthetic fixture 035: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000036",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 036: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 036: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000037",
+    "layer": "preference",
+    "content": "Synthetic fixture 037: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "preference:Synthetic fixture 037: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000038",
+    "layer": "procedure",
+    "content": "Synthetic fixture 038: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "procedure:Synthetic fixture 038: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000039",
+    "layer": "decision",
+    "content": "Synthetic fixture 039: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "decision:Synthetic fixture 039: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000040",
+    "layer": "correction",
+    "content": "Synthetic fixture 040: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "correction:Synthetic fixture 040: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000041",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 041: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 041: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000042",
+    "layer": "preference",
+    "content": "Synthetic fixture 042: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "preference:Synthetic fixture 042: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000043",
+    "layer": "procedure",
+    "content": "Synthetic fixture 043: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "procedure:Synthetic fixture 043: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000044",
+    "layer": "decision",
+    "content": "Synthetic fixture 044: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "decision:Synthetic fixture 044: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000045",
+    "layer": "correction",
+    "content": "Synthetic fixture 045: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "correction:Synthetic fixture 045: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000046",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 046: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 046: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000047",
+    "layer": "preference",
+    "content": "Synthetic fixture 047: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "preference:Synthetic fixture 047: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000048",
+    "layer": "procedure",
+    "content": "Synthetic fixture 048: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "procedure:Synthetic fixture 048: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000049",
+    "layer": "decision",
+    "content": "Synthetic fixture 049: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "decision:Synthetic fixture 049: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000050",
+    "layer": "correction",
+    "content": "Synthetic fixture 050: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "correction:Synthetic fixture 050: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000051",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 051: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 051: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000052",
+    "layer": "preference",
+    "content": "Synthetic fixture 052: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "preference:Synthetic fixture 052: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000053",
+    "layer": "procedure",
+    "content": "Synthetic fixture 053: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "procedure:Synthetic fixture 053: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000054",
+    "layer": "decision",
+    "content": "Synthetic fixture 054: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "decision:Synthetic fixture 054: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000055",
+    "layer": "correction",
+    "content": "Synthetic fixture 055: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "correction:Synthetic fixture 055: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000056",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 056: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 056: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000057",
+    "layer": "preference",
+    "content": "Synthetic fixture 057: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "preference:Synthetic fixture 057: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000058",
+    "layer": "procedure",
+    "content": "Synthetic fixture 058: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "procedure:Synthetic fixture 058: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000059",
+    "layer": "decision",
+    "content": "Synthetic fixture 059: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "decision:Synthetic fixture 059: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000060",
+    "layer": "correction",
+    "content": "Synthetic fixture 060: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "correction:Synthetic fixture 060: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000061",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 061: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 061: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000062",
+    "layer": "preference",
+    "content": "Synthetic fixture 062: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "preference:Synthetic fixture 062: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000063",
+    "layer": "procedure",
+    "content": "Synthetic fixture 063: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "procedure:Synthetic fixture 063: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000064",
+    "layer": "decision",
+    "content": "Synthetic fixture 064: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "decision:Synthetic fixture 064: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000065",
+    "layer": "correction",
+    "content": "Synthetic fixture 065: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "correction:Synthetic fixture 065: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000066",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 066: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 066: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000067",
+    "layer": "preference",
+    "content": "Synthetic fixture 067: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "preference:Synthetic fixture 067: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000068",
+    "layer": "procedure",
+    "content": "Synthetic fixture 068: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "procedure:Synthetic fixture 068: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000069",
+    "layer": "decision",
+    "content": "Synthetic fixture 069: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "decision:Synthetic fixture 069: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000070",
+    "layer": "correction",
+    "content": "Synthetic fixture 070: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "correction:Synthetic fixture 070: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000071",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 071: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 071: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000072",
+    "layer": "preference",
+    "content": "Synthetic fixture 072: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "preference:Synthetic fixture 072: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000073",
+    "layer": "procedure",
+    "content": "Synthetic fixture 073: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "procedure:Synthetic fixture 073: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000074",
+    "layer": "decision",
+    "content": "Synthetic fixture 074: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "decision:Synthetic fixture 074: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000075",
+    "layer": "correction",
+    "content": "Synthetic fixture 075: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "correction:Synthetic fixture 075: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000076",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 076: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 076: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000077",
+    "layer": "preference",
+    "content": "Synthetic fixture 077: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "preference:Synthetic fixture 077: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000078",
+    "layer": "procedure",
+    "content": "Synthetic fixture 078: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "procedure:Synthetic fixture 078: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000079",
+    "layer": "decision",
+    "content": "Synthetic fixture 079: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "decision:Synthetic fixture 079: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000080",
+    "layer": "correction",
+    "content": "Synthetic fixture 080: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "correction:Synthetic fixture 080: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000081",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 081: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 081: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000082",
+    "layer": "preference",
+    "content": "Synthetic fixture 082: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "preference:Synthetic fixture 082: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000083",
+    "layer": "procedure",
+    "content": "Synthetic fixture 083: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "procedure:Synthetic fixture 083: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000084",
+    "layer": "decision",
+    "content": "Synthetic fixture 084: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "decision:Synthetic fixture 084: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000085",
+    "layer": "correction",
+    "content": "Synthetic fixture 085: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "correction:Synthetic fixture 085: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000086",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 086: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 086: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000087",
+    "layer": "preference",
+    "content": "Synthetic fixture 087: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "preference:Synthetic fixture 087: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000088",
+    "layer": "procedure",
+    "content": "Synthetic fixture 088: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "procedure:Synthetic fixture 088: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000089",
+    "layer": "decision",
+    "content": "Synthetic fixture 089: Alice validates Memra cross-session memory behavior for project sandbox 06.",
+    "expected_topic_key": "decision:Synthetic fixture 089: Alice validates Memra cross-session memory behavior for project sandbox 06."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000090",
+    "layer": "correction",
+    "content": "Synthetic fixture 090: Alice validates Memra cross-session memory behavior for project sandbox 07.",
+    "expected_topic_key": "correction:Synthetic fixture 090: Alice validates Memra cross-session memory behavior for project sandbox 07."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000091",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 091: Alice validates Memra cross-session memory behavior for project sandbox 08.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 091: Alice validates Memra cross-session memory behavior for project sandbox 08."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000092",
+    "layer": "preference",
+    "content": "Synthetic fixture 092: Alice validates Memra cross-session memory behavior for project sandbox 09.",
+    "expected_topic_key": "preference:Synthetic fixture 092: Alice validates Memra cross-session memory behavior for project sandbox 09."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000093",
+    "layer": "procedure",
+    "content": "Synthetic fixture 093: Alice validates Memra cross-session memory behavior for project sandbox 10.",
+    "expected_topic_key": "procedure:Synthetic fixture 093: Alice validates Memra cross-session memory behavior for project sandbox 10."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000094",
+    "layer": "decision",
+    "content": "Synthetic fixture 094: Alice validates Memra cross-session memory behavior for project sandbox 11.",
+    "expected_topic_key": "decision:Synthetic fixture 094: Alice validates Memra cross-session memory behavior for project sandbox 11."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000095",
+    "layer": "correction",
+    "content": "Synthetic fixture 095: Alice validates Memra cross-session memory behavior for project sandbox 12.",
+    "expected_topic_key": "correction:Synthetic fixture 095: Alice validates Memra cross-session memory behavior for project sandbox 12."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000096",
+    "layer": "verified_fact",
+    "content": "Synthetic fixture 096: Alice validates Memra cross-session memory behavior for project sandbox 01.",
+    "expected_topic_key": "verified_fact:Synthetic fixture 096: Alice validates Memra cross-session memory behavior for project sandbox 01."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000097",
+    "layer": "preference",
+    "content": "Synthetic fixture 097: Alice validates Memra cross-session memory behavior for project sandbox 02.",
+    "expected_topic_key": "preference:Synthetic fixture 097: Alice validates Memra cross-session memory behavior for project sandbox 02."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000098",
+    "layer": "procedure",
+    "content": "Synthetic fixture 098: Alice validates Memra cross-session memory behavior for project sandbox 03.",
+    "expected_topic_key": "procedure:Synthetic fixture 098: Alice validates Memra cross-session memory behavior for project sandbox 03."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000099",
+    "layer": "decision",
+    "content": "Synthetic fixture 099: Alice validates Memra cross-session memory behavior for project sandbox 04.",
+    "expected_topic_key": "decision:Synthetic fixture 099: Alice validates Memra cross-session memory behavior for project sandbox 04."
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000100",
+    "layer": "correction",
+    "content": "Synthetic fixture 100: Alice validates Memra cross-session memory behavior for project sandbox 05.",
+    "expected_topic_key": "correction:Synthetic fixture 100: Alice validates Memra cross-session memory behavior for project sandbox 05."
+  }
+]

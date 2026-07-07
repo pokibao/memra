@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# pre-push — enforces ~/.claude/CLAUDE.md SOP #31 "push 前三合一门槛".
+#
+# Runs scripts/local-ci.sh --fast before every push. Blocks push on failure.
+#
+# Bypass (use sparingly):
+#   git push --no-verify
+#
+# To install this hook into .git/hooks/, run:
+#   ./scripts/install-git-hooks.sh
+
+set -euo pipefail
+
+# Unset git-plumbing env vars inherited from `git push` parent process.
+# This keeps nested git calls in cargo tests or shell gates pointed at their
+# own repositories instead of the pushing worktree's admin gitdir.
+unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_OBJECT_DIRECTORY GIT_COMMON_DIR
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+CI_SCRIPT="$REPO_ROOT/scripts/local-ci.sh"
+
+if [[ ! -x "$CI_SCRIPT" ]]; then
+    echo "pre-push: $CI_SCRIPT not found or not executable; skipping." >&2
+    exit 0
+fi
+
+echo "▶ pre-push: running scripts/local-ci.sh --fast before push"
+echo "  (bypass with 'git push --no-verify' if genuinely urgent)"
+
+if "$CI_SCRIPT" --fast; then
+    echo "✓ local CI passed — proceeding with push"
+    exit 0
+else
+    echo >&2
+    echo "✗ local CI failed — blocking push." >&2
+    echo "  Fix the issues above, or override with: git push --no-verify" >&2
+    exit 1
+fi

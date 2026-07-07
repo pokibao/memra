@@ -1,0 +1,41 @@
+<!-- EXAMPLE: Copy to com.memra.consolidate.plist and replace
+     /YOUR/HOME with your home directory and /YOUR/PATH/TO with your project path.
+     Then: cp this.plist.example ~/Library/LaunchAgents/com.memra.consolidate.plist -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.memra.consolidate</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/YOUR/PATH/TO/memra/scripts/consolidate_nightly.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/YOUR/PATH/TO/memra</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>3</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/YOUR/HOME/.memra/logs/consolidation-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/YOUR/HOME/.memra/logs/consolidation-stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/YOUR/HOME/.local/bin</string>
+        <key>HOME</key>
+        <string>/YOUR/HOME</string>
+    </dict>
+</dict>
+</plist>

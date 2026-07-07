@@ -1,0 +1,61 @@
+<!-- EXAMPLE: Copy to com.memra.background-workers.plist and replace
+     /YOUR/HOME with your home directory and /YOUR/PATH/TO with your project path.
+     Then: cp this.plist.example ~/Library/LaunchAgents/com.memra.background-workers.plist -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.memra.background-workers</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/YOUR/PATH/TO/memra/target/release/memra</string>
+        <string>background</string>
+        <string>run</string>
+        <string>--project</string>
+        <string>memra</string>
+        <string>--json</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/YOUR/PATH/TO/memra</string>
+
+    <!-- 每小时检查一次。真正是否执行 autoresearch，由 safe window 和 pending job 决定。 -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>StandardOutPath</key>
+    <string>/YOUR/HOME/.memra/logs/background-workers-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/YOUR/HOME/.memra/logs/background-workers-stderr.log</string>
+
+    <key>AbandonProcessGroup</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/YOUR/HOME/.local/bin:/YOUR/HOME/go/bin</string>
+        <key>HOME</key>
+        <string>/YOUR/HOME</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+        <key>AKM_PATH</key>
+        <string>/YOUR/HOME/go/bin/akm</string>
+        <!-- autoresearch safe window: 02:00 - 06:59 local time -->
+        <key>http_proxy</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>https_proxy</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>HTTP_PROXY</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>HTTPS_PROXY</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>no_proxy</key>
+        <string>localhost,127.0.0.1,::1</string>
+        <key>NO_PROXY</key>
+        <string>localhost,127.0.0.1,::1</string>
+    </dict>
+</dict>
+</plist>

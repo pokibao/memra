@@ -1,0 +1,10 @@
+{"args":{"change_type":"create","proposed_content":"Founding principle alpha","reason":"Gate F happy path alpha"},"kind":"tool","step_id":"S05-01","tool":"propose_change"}
+{"args":{"approver":"alice","change_id":"step:S05-01:constitution_changes:0"},"kind":"tool","step_id":"S05-02","tool":"approve_change"}
+{"args":{"approver":"bob","change_id":"step:S05-01:constitution_changes:0"},"kind":"tool","step_id":"S05-03","tool":"approve_change"}
+{"args":{"approver":"carol","change_id":"step:S05-01:constitution_changes:0"},"kind":"tool","step_id":"S05-04","tool":"approve_change"}
+{"args":{"include_constitution":true,"limit":5,"query":"Founding principle alpha"},"kind":"tool","step_id":"S05-05","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S05-06","tool":"get_context"}
+{"args":{"change_type":"create","proposed_content":"Founding principle beta","reason":"Gate F happy path beta"},"kind":"tool","step_id":"S05-07","tool":"propose_change"}
+{"args":{"approver":"dan","change_id":"step:S05-07:constitution_changes:0"},"kind":"tool","step_id":"S05-08","tool":"approve_change"}
+{"args":{"approver":"erin","change_id":"step:S05-07:constitution_changes:0"},"kind":"tool","step_id":"S05-09","tool":"approve_change"}
+{"args":{"approver":"frank","change_id":"step:S05-07:constitution_changes:0"},"kind":"tool","step_id":"S05-10","tool":"approve_change"}

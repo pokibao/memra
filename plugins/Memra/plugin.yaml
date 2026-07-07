@@ -1,0 +1,6 @@
+name: Memra
+version: 1.0.0
+description: "Memra — Persistent AI memory infrastructure for Claude Code"
+hooks:
+  - on_session_end
+  - on_pre_compress

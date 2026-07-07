@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# pre-commit — SEC-02 gate
+#
+# Blocks commits that would introduce plaintext secrets.
+# Installed by scripts/install-git-hooks.sh (copies to .git/hooks/pre-commit).
+#
+# Bypass (only when absolutely necessary, e.g. committing a renamed noqa'd
+# example): git commit --no-verify
+#
+# Reason: scripts/check_no_plaintext_secrets.sh is useful as a CI gate AND
+# as a local pre-commit stop. Without this hook the scan is manual-only.
+
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(git rev-parse --show-toplevel)" && pwd)"
+GUARD="$REPO_ROOT/scripts/check_no_plaintext_secrets.sh"
+
+if [[ ! -x "$GUARD" ]]; then
+    echo "pre-commit: $GUARD not found or not executable — skipping SEC-02 gate" >&2
+    exit 0
+fi
+
+if ! bash "$GUARD"; then
+    echo "" >&2
+    echo "pre-commit: SEC-02 plaintext secret gate FAILED." >&2
+    echo "  Fix the flagged value or bypass with: git commit --no-verify" >&2
+    exit 1
+fi

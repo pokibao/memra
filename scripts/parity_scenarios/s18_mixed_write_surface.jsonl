@@ -1,0 +1,10 @@
+{"args":{"category":"research","confidence":1.0,"content":"Mixed surface rule alpha"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S18-01","tool":"add_rule"}
+{"args":{"summary":"mixed blocked","task_id":"mixed-surface","task_status":"blocked"},"kind":"tool","step_id":"S18-02","tool":"save_checkpoint"}
+{"args":{"memory_id":"step:S18-01:notes:0","outcome":"confirmed"},"kind":"tool","step_id":"S18-03","tool":"report_outcome"}
+{"args":{"limit":10,"query":"Mixed surface"},"kind":"tool","step_id":"S18-04","tool":"search_rules"}
+{"args":{"change_type":"create","proposed_content":"Mixed surface constitution","reason":"combined path"},"kind":"tool","step_id":"S18-05","tool":"propose_change"}
+{"args":{"approver":"alice","change_id":"step:S18-05:constitution_changes:0"},"kind":"tool","step_id":"S18-06","tool":"approve_change"}
+{"args":{"approver":"bob","change_id":"step:S18-05:constitution_changes:0"},"kind":"tool","step_id":"S18-07","tool":"approve_change"}
+{"args":{"approver":"carol","change_id":"step:S18-05:constitution_changes:0"},"kind":"tool","step_id":"S18-08","tool":"approve_change"}
+{"args":{"limit":5,"task_id":"mixed-surface","task_status":"active"},"kind":"tool","step_id":"S18-09","tool":"search_checkpoints"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S18-10","tool":"get_context"}

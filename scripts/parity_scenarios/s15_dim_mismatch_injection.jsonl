@@ -1,0 +1,10 @@
+{"args":{"limit":5,"query":"legacy dim mismatch"},"kind":"tool","step_id":"S15-01","tool":"search_rules"}
+{"args":{"category":"research","confidence":1.0,"content":"legacy dim mismatch memory new fact"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S15-02","tool":"add_rule"}
+{"args":{"limit":10,"query":"legacy dim mismatch memory"},"kind":"tool","step_id":"S15-03","tool":"search_rules"}
+{"args":{"category":"research","confidence":1.0,"content":"fresh aligned memory"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S15-04","tool":"add_rule"}
+{"args":{"limit":5,"query":"fresh aligned memory"},"kind":"tool","step_id":"S15-05","tool":"search_rules"}
+{"args":{"mode":"wake"},"kind":"tool","step_id":"S15-06","tool":"get_context"}
+{"args":{"category":"research","confidence":1.0,"content":"another aligned memory"},"expects":{"jsonl_delta":1},"kind":"tool","step_id":"S15-07","tool":"add_rule"}
+{"args":{"limit":10,"query":"aligned memory"},"kind":"tool","step_id":"S15-08","tool":"search_rules"}
+{"args":{"mode":"full"},"kind":"tool","step_id":"S15-09","tool":"get_context"}
+{"args":{"limit":10,"query":"dim mismatch"},"kind":"tool","step_id":"S15-10","tool":"search_rules"}
